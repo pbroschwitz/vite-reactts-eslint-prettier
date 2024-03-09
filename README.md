@@ -1,29 +1,46 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + ESLint + Prettier + VSCode
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint and Prettier rules.
 
-Currently, two official plugins are available:
+## Install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+$> pnpm install
+```
 
-## Expanding the ESLint configuration
+<details>
+<summary>Lint and format</summary>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Install prettier and eslint extensions
 
-- Configure the top-level `parserOptions` property like this:
+- Go to the extensions section of VSCode
+- Select **_recommended_** extensions
+- Install the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+### Add settings
+
+- In your settings add the `editor.defaultFormatter` and `editor.formatOnSave` properties.
+- Additionally you
+
+```json
+// .vscode/settings.json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
 ```
+
+</details>
+
+## Start project
+
+In the project directory, you can run:
+
+```bash
+$> npm start
+```
+
+## Expanding the ESLint configuration
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
