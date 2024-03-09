@@ -37,6 +37,6 @@ $> pnpm install
 In the project directory, you can run:
 
 ```bash
-$> npm start
+$> pnpm start
 ```
 
