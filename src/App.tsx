@@ -1,9 +1,11 @@
-import './App.css';
+import { FormFilesSample } from './components/formFiles/FormFilesSample';
+import FormSimpleSample from './components/formSimpleSample/FormSimpleSample';
 
 function App() {
   return (
     <>
-      <h1>Start here</h1>
+      <FormSimpleSample />
+      <FormFilesSample />
     </>
   );
 }
