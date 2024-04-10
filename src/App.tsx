@@ -1,13 +1,5 @@
-import { FormFilesSample } from './components/formFiles/FormFilesSample';
-import FormSimpleSample from './components/formSimpleSample/FormSimpleSample';
-
 function App() {
-  return (
-    <>
-      <FormSimpleSample />
-      <FormFilesSample />
-    </>
-  );
+  return <h1>Your app</h1>;
 }
 
 export default App;
